@@ -3,7 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: space-around;
+    background-color: azure;
 }
 
 button {
@@ -14,6 +15,11 @@ button {
     border-color: forestgreen;
 }
 
+h1 {
+    margin: 0;
+    visibility: hidden;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3,min-content);
@@ -21,15 +27,14 @@ button {
 
 .container div {
     border: solid 1px black;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 .container div:nth-child(odd) {
-    background-color: blueviolet;
+    background-color: white;
 }
 
 .container div:nth-child(even) {
-    background-color: aqua;
+    background-color: black;
 }
-
