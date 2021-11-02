@@ -29,6 +29,11 @@ h1 {
     border: solid 1px black;
     width: 15rem;
     height: 15rem;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15rem;
 }
 
 .container div:nth-child(odd) {

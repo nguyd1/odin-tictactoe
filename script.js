@@ -26,7 +26,12 @@ const displayController=(()=>{
 })();
 
 // build function to allow players to mark spots with dom
+const boxes=document.querySelectorAll(".container div");
+boxes.forEach(box=>box.addEventListener("click",function(e){mark(e);}));
 
+const mark=(e)=>{
+    e.target.textContent="X";
+};
 
 // check for game over each move
 
@@ -34,7 +39,7 @@ const displayController=(()=>{
 // start/restart button
 const restart=document.querySelector(".restart");
 restart.addEventListener("click",()=>{
-
+    for(let i=0;i<boxes.length;i++) boxes[i].textContent="";
 });
 
 // display winner
