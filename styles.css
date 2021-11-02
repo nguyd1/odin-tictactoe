@@ -21,8 +21,8 @@ button {
 
 .container div {
     border: solid 1px black;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .container div:nth-child(odd) {
