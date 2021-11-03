@@ -26,7 +26,7 @@ const displayController=(()=>{
     const move=(e,player)=>{
         const id=e.target.id;
         if(gameBoard.board[id]==null){
-            count++;console.log(count);
+            count++;
 
             gameBoard.board[id]=player==="player1"?"X":"O";
             e.target.textContent=gameBoard.board[id];
